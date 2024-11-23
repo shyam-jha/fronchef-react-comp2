@@ -1,31 +1,29 @@
 import './App.css';
+import About from './components/About';
 import VideoCarousel from './components/Carousel';
 import Footer from './components/Footer';
+import AnimatedTitle from './components/Title';
 
 function App() {
   return (
     <div>
-    <section
-      className="w-screen overflow-hidden h-full common-padding bg-zinc"
-    >
-      <div className="screen-max-width">
-        <div className="mb-12 w-full md:flex items-end justify-between">
-          <h1 id="title" className="section-heading">Get the highlights.</h1>
 
-          <div className="flex flex-wrap items-end gap-5">
-            <p className="link">
-              Watch the film
-            </p>
-            <p className="link">
-              Watch the event
-            </p>
-          </div>
-        </div>
-        <VideoCarousel />
+<AnimatedTitle
+          title="Disc<b>o</b>ver the world's <br /> largest shared <b>a</b>dventure"
+          containerClass="mt-5 !text-black text-center"
+        />
 
+      <About
+      heading="Welcome to Adventure World"
+      description="Step into the most immersive adventure of your life."
+      subDescription="Join players from around the globe in a unified economy of fun and challenges."
+      imageSrc="img/about.webp"
+      />
+
+      <div className='flex justify-center items-center h-screen w-full bg-white'>
+        <p className='text-center text-4xl text-black uppercase font-extrabold'> your more content goes here </p>
+        
       </div>
-    </section>
-    <Footer />
     </div>
   );
 }

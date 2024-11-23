@@ -114,3 +114,8 @@ canvas {
     @apply opacity-0 translate-y-[100px]
   }
 }
+
+.mask-clip-path {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+

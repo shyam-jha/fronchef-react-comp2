@@ -3,15 +3,28 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        zentry: ["zentry", "sans-serif"],
+        general: ["general", "sans-serif"],
+        "circular-web": ["circular-web", "sans-serif"],
+        "robert-medium": ["robert-medium", "sans-serif"],
+        "robert-regular": ["robert-regular", "sans-serif"],
+      },
       colors: {
-        blue: "#2997FF",
-        gray: {
-          DEFAULT: "#86868b",
-          100: "#94928d",
-          200: "#afafaf",
-          300: "#42424570",
+        blue: {
+          50: "#DFDFF0",
+          75: "#dfdff2",
+          100: "#F0F2FA",
+          200: "#010101",
+          300: "#4FB7DD",
         },
-        zinc: "#101010",
+        violet: {
+          300: "#5724ff",
+        },
+        yellow: {
+          100: "#8e983f",
+          300: "#edff66",
+        },
       },
     },
   },
