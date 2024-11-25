@@ -1,8 +1,6 @@
 import './App.css';
 import About from './components/About';
-import VideoCarousel from './components/Carousel';
 import Footer from './components/Footer';
-import AnimatedTitle from './components/Title';
 
 function App() {
   return (
